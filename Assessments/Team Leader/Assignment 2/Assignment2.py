@@ -1,9 +1,17 @@
 import random
-while True:
-    T = random.randint(1,100)
-    H = random.randint(1,100)
-    if( T >  50 and H < 50):
-        print("Temperature:",T,"and humidity:",H," is High and So Alarm is Detected")
-    elif( T < 30  and H < 40):
-        print("Temperature:",T," and humidity :",H," is low and So Alarm is Not Detected")    
-    break
+
+temp = random.randint(1,100)
+humd = random.randint(1,100)
+#Temperature value is calculated for Celsius
+if( temp > 75 and humd < 50):
+    print("Temperature:",temp,"is High and humidity:",humd," is Low : High Temperature Hazard")
+    print("ALARM DETECTED")
+elif( temp < 10  and humd < 40):
+    print("Temperature:",temp,"is Very low and humidity :",humd," is low : Low Temperature Hazard")    
+    print("ALARM DETECTED")
+elif( temp < 50 and humd > 60):
+    print("High Humid Condition")
+    print("ALARM NOT DETECTED")
+else:
+    print("Normal Condition")
+    print("ALARM NOT DETECTED")
