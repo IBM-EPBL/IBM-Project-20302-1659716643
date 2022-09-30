@@ -12,6 +12,9 @@ elif( temp < 10  and humd < 40):
 elif( temp < 50 and humd > 60):
     print("High Humid Condition")
     print("ALARM NOT DETECTED")
+elif(temp > 80):
+    print("High Temperature Detected")
+    print("ALARM DETECTED")
 else:
     print("Normal Condition")
     print("ALARM NOT DETECTED")
